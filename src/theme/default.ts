@@ -15,10 +15,12 @@ export default {
     GRAY_100: "#F4F4F4",
   },
   FONT_FAMILY: {
-    REGULAR: "Roboto_400Regular",
-    BOLD: "Roboto_700Bold",
+    REGULAR: "Sora_400Regular",
+    MEDIUM: "Sora_500Medium",
+    SEMIBOLD: "Sora_600SemiBold",
   },
   FONT_SIZE: {
+    XS: 12,
     SM: 14,
     MD: 16,
     LG: 18,
