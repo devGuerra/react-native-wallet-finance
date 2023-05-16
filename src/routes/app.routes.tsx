@@ -31,11 +31,19 @@ export function AppRoutes() {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName="Home"
+      initialRouteName="SignIn"
     >
-      <Screen name="Home" component={HomeRoutes} />
-      <Screen name="SignIn" component={SignIn} />
-      <Screen name="SignUp" component={SignUp} />
+      <Screen name="HomeTabs" component={HomeRoutes} />
+      <Screen
+        name="SignIn"
+        component={SignIn}
+        options={{ headerTitle: "", headerShown: true }}
+      />
+      <Screen
+        name="SignUp"
+        component={SignUp}
+        options={{ headerTitle: "", headerShown: true }}
+      />
     </Navigator>
   );
 }
