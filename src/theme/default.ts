@@ -26,4 +26,11 @@ export default {
     LG: 18,
     XL: 24,
   },
+  BORDER_RADIUS: {
+    XS: 4,
+    SM: 8,
+  },
+  SPACING: {
+    MD: 20,
+  },
 };
