@@ -14,27 +14,12 @@ export function AppRoutes() {
         headerShown: false,
         tabBarShowLabel: false,
       }}
+      initialRouteName="Home"
     >
-      <Screen
-        name="Home"
-        component={Home}
-        options={{ tabBarButton: () => null }}
-      />
-      <Screen
-        name="Currency"
-        component={Currency}
-        options={{ tabBarButton: () => null }}
-      />
-      <Screen
-        name="SignIn"
-        component={SignIn}
-        options={{ tabBarButton: () => null }}
-      />
-      <Screen
-        name="SignUp"
-        component={SignUp}
-        options={{ tabBarButton: () => null }}
-      />
+      <Screen name="Home" component={Home} />
+      <Screen name="Currency" component={Currency} />
+      <Screen name="SignIn" component={SignIn} />
+      <Screen name="SignUp" component={SignUp} />
     </Navigator>
   );
 }
