@@ -17,6 +17,10 @@ export const SignIn = () => {
     navigation.navigate("SignUp");
   }
 
+  function handleSignIn() {
+    navigation.navigate("HomeTabs");
+  }
+
   return (
     <Container>
       <Title>Login</Title>
@@ -28,7 +32,7 @@ export const SignIn = () => {
           secureTextEntry
         />
       </BoxInput>
-      <Button>Login</Button>
+      <Button onPress={handleSignIn}>Login</Button>
       <SignUpButton onPress={handleSignUp}>
         <SignUpText>
           Don’t have an account? <Underline>Sign up</Underline> here
