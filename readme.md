@@ -1,5 +1,8 @@
 # Project create in job challange
 
+![image](https://github.com/devGuerra/wallet-finance/assets/6579736/499b9a7c-3fde-4bc4-a8c5-3af36e271490)
+
+
 ## The project uses
 
 - Typescript
