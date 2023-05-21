@@ -15,7 +15,7 @@ export const ContainerText = styled.View`
   align-items: center;
 `;
 
-export const ButtonGoBack = styled.TouchableOpacity`
+export const ButtonIcon = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
   height: 32px;

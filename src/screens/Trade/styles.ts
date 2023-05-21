@@ -11,3 +11,14 @@ export const Container = styled.View`
   padding: 20px;
   gap: 20px;
 `;
+
+export const ContainerMain = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const ContainerRange = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;

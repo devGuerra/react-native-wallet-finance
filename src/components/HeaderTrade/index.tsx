@@ -1,31 +1,35 @@
 import React from "react";
 
-import { ButtonGoBack, Container, ContainerText } from "./styles";
+import { ButtonIcon, Container, ContainerText } from "./styles";
 import { ArrowLeft } from "phosphor-react-native";
 import { Typography } from "@components/Typography";
 import { useTheme } from "styled-components";
-import { View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-export const HeaderTrade: React.FC = () => {
+interface HeaderTradeProps {
+  name: string;
+  tag: string;
+}
+
+export const HeaderTrade: React.FC<HeaderTradeProps> = ({ name, tag }) => {
   const { COLORS } = useTheme();
   const { goBack } = useNavigation();
 
   return (
     <Container>
-      <ButtonGoBack onPress={goBack}>
+      <ButtonIcon onPress={goBack}>
         <ArrowLeft size={24} weight="bold" color={COLORS.BLACK} />
-      </ButtonGoBack>
+      </ButtonIcon>
       <ContainerText>
         <Typography size="LG" weight="SEMIBOLD">
-          Wind Fund
+          {name}
         </Typography>
         <Typography size="SM" color="GRAY_400">
-          WFND
+          {tag}
         </Typography>
       </ContainerText>
 
-      <View />
+      <ButtonIcon />
     </Container>
   );
 };
