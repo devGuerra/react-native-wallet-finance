@@ -1,5 +1,14 @@
-import { Text } from "react-native";
+import { PageContainer, Container } from "./styles";
+import { useTheme } from "styled-components";
+import { HeaderTrade } from "@components/HeaderTrade";
 
 export const Trade = () => {
-  return <Text>Trade</Text>;
+  const { COLORS } = useTheme();
+
+  return (
+    <PageContainer>
+      <HeaderTrade />
+      <Container></Container>
+    </PageContainer>
+  );
 };
