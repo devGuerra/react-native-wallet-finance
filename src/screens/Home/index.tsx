@@ -11,12 +11,14 @@ import {
   BannerContainer,
   BannerTextContainer,
   Container,
+  ContainerRow,
   Line,
   PageContainer,
   PortfolioBalance,
   PortfolioBox,
   RewardsButton,
 } from "./styles";
+import { CardVertical } from "@components/CardVertical";
 
 type CardsType = (typeof cardsMock)[0];
 
@@ -103,6 +105,10 @@ export const Home = () => {
           </BannerTextContainer>
           <BusinessImage width={94} height={87} />
         </BannerContainer>
+        <ContainerRow>
+          <CardVertical title="Why should you invest here?" />
+          <CardVertical title="" />
+        </ContainerRow>
       </Container>
     </PageContainer>
   );

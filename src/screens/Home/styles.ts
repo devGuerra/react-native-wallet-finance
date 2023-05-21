@@ -10,6 +10,7 @@ export const PageContainer = styled.ScrollView.attrs({
 
 export const Container = styled.View`
   padding: 20px;
+  gap: 20px;
 `;
 
 export const PortfolioBalance = styled.View`
@@ -64,4 +65,12 @@ export const BannerContainer = styled.TouchableOpacity`
 export const BannerTextContainer = styled.View`
   gap: 10px;
   flex: 1;
+`;
+
+export const ContainerRow = styled.View`
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  gap: 20px;
 `;
