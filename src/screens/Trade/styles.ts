@@ -21,4 +21,17 @@ export const ContainerRange = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
+`;
+
+export const Grid = styled.View`
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+`;
+
+export const ContainerMiddle = styled.View`
+  width: 50%;
+  margin-bottom: 10px;
 `;

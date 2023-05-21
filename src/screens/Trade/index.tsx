@@ -12,10 +12,39 @@ import {
   Container,
   ContainerMain,
   ContainerRange,
+  ContainerMiddle,
+  Grid,
 } from "./styles";
 
 export const Trade = () => {
   const { COLORS } = useTheme();
+
+  const stats = [
+    {
+      label: "Market Cap",
+      value: "$430.88m",
+    },
+    {
+      label: "Issue Date",
+      value: "18/04/2022",
+    },
+    {
+      label: "Vintage Range",
+      value: "2019 – 2022",
+    },
+    {
+      label: "TER",
+      value: "0.15%",
+    },
+    {
+      label: "Price at Close",
+      value: "$17.68",
+    },
+    {
+      label: "Price at Open",
+      value: "$17.74",
+    },
+  ];
 
   return (
     <PageContainer>
@@ -49,6 +78,27 @@ export const Trade = () => {
           <ButtonRange active={false} title="1m" />
           <ButtonRange active={false} title="All" />
         </ContainerRange>
+
+        <Typography size="LG" weight="SEMIBOLD">
+          Info & Stats
+        </Typography>
+
+        <Grid>
+          {stats.map((item, index) => (
+            <ContainerMiddle key={index}>
+              <Typography size="SM" weight="REGULAR" color="GRAY_300">
+                {item.label}
+              </Typography>
+              <Typography size="SM" weight="REGULAR">
+                {item.value}
+              </Typography>
+            </ContainerMiddle>
+          ))}
+        </Grid>
+
+        <Typography size="LG" weight="SEMIBOLD">
+          Fund Breakdown
+        </Typography>
       </Container>
     </PageContainer>
   );
