@@ -12,6 +12,7 @@ export default {
 
     GRAY_300: "#A0A0A0",
     GRAY_200: "#CFCFCF",
+    GRAY_150: "#E6E6E6",
     GRAY_100: "#F4F4F4",
   },
   FONT_FAMILY: {
