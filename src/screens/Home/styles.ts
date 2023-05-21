@@ -48,3 +48,20 @@ export const ListCards = styled(FlatList).attrs({
 })`
   margin-top: 20px;
 `;
+
+export const BannerContainer = styled.TouchableOpacity`
+  border-radius: ${({ theme }) => theme.BORDER_RADIUS.SM}px;
+  background-color: ${({ theme }) => theme.COLORS.PURPLE_700};
+
+  flex-direction: row;
+  padding: 12px;
+
+  box-sizing: border-box;
+
+  gap: 32px;
+`;
+
+export const BannerTextContainer = styled.View`
+  gap: 10px;
+  flex: 1;
+`;

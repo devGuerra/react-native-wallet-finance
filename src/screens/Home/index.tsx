@@ -1,18 +1,22 @@
+import { FlatList } from "react-native";
+import { Coin } from "phosphor-react-native";
+import { useTheme } from "styled-components";
+
+import { HomeHeader } from "@components/HomeHeader";
+import { Typography } from "@components/Typography";
+import { CardChart } from "@components/CardChart";
+import BusinessImage from "@assets/bussiness.svg";
+
 import {
+  BannerContainer,
+  BannerTextContainer,
   Container,
   Line,
-  ListCards,
   PageContainer,
   PortfolioBalance,
   PortfolioBox,
   RewardsButton,
 } from "./styles";
-import { HomeHeader } from "@components/HomeHeader";
-import { Coin } from "phosphor-react-native";
-import { useTheme } from "styled-components";
-import { Typography } from "@components/Typography";
-import { CardChart } from "@components/CardChart";
-import { FlatList } from "react-native";
 
 type CardsType = (typeof cardsMock)[0];
 
@@ -87,6 +91,19 @@ export const Home = () => {
           />
         )}
       />
+      <Container>
+        <BannerContainer>
+          <BannerTextContainer>
+            <Typography size="MD" weight="SEMIBOLD" color="WHITE">
+              Learn more about carbon credits
+            </Typography>
+            <Typography size="SM" weight="REGULAR" color="WHITE">
+              Check out our top tips!
+            </Typography>
+          </BannerTextContainer>
+          <BusinessImage width={94} height={87} />
+        </BannerContainer>
+      </Container>
     </PageContainer>
   );
 };

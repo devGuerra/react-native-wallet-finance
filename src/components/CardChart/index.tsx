@@ -4,8 +4,9 @@ import { Typography } from "@components/Typography";
 
 import { LineChart } from "react-native-svg-charts";
 import * as shape from "d3-shape";
+import { TouchableOpacityProps } from "react-native";
 
-interface CardChartProps {
+interface CardChartProps extends TouchableOpacityProps {
   data: number[];
   name: string;
   value: string;
@@ -17,9 +18,10 @@ export const CardChart: React.FC<CardChartProps> = ({
   name,
   value,
   percentage,
+  ...rest
 }) => {
   return (
-    <Container>
+    <Container {...rest}>
       <Wind size={24} color="red" />
       <Typography size="XS" weight="SEMIBOLD">
         {name}

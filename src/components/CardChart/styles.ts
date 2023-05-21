@@ -1,6 +1,7 @@
+import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 
-export const Container = styled.View`
+export const Container = styled(TouchableOpacity)`
   background-color: ${({ theme }) => theme.COLORS.WHITE};
   border-radius: ${({ theme }) => theme.BORDER_RADIUS.SM}px;
   padding: 20px;
